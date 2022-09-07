@@ -231,6 +231,7 @@ def ResNet152():
 def test_output_shape():
     net = ResNet18()
     x = torch.randn(batch_size,3,32,32)  # 模拟输入
+    print(x.shape)
     y = net(x)
     print(net)  # 查看网络结构
     print("")
